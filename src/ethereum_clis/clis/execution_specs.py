@@ -147,10 +147,10 @@ class ExecutionSpecsExceptionMapper(ExceptionMapper):
             "InsufficientMaxFeePerBlobGasError"
         ),
         TransactionException.TYPE_3_TX_PRE_FORK: (
-            "module 'ethereum.shanghai.transactions' has no attribute 'BlobTransaction'"
+            "module 'ethereum.forks.shanghai.transactions' has no attribute 'BlobTransaction'"
         ),
         TransactionException.TYPE_4_TX_PRE_FORK: (
-            "'ethereum.cancun.transactions' has no attribute 'SetCodeTransaction'"
+            "'ethereum.forks.cancun.transactions' has no attribute 'SetCodeTransaction'"
         ),
         TransactionException.TYPE_3_TX_INVALID_BLOB_VERSIONED_HASH: (
             "InvalidBlobVersionedHashError"
